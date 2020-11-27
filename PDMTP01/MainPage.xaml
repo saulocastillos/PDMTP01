@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDMTP01.MainPage">
+
+    <FlexLayout Direction="Column" BackgroundColor="Black">
+        <Label 
+        Text="Aplicação Teste" 
+        TextColor="White" 
+        FontSize="36" 
+        FontAttributes="Bold" 
+        HorizontalTextAlignment="Center"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+        Margin="0,30"
+    />
+        <FlexLayout Direction="Column" HeightRequest="250" Padding="10,0,0,0" JustifyContent="SpaceAround">
+            <FlexLayout Direction="Row" HeightRequest="50" Margin="0,0,30,0">
+                <Label 
+                Text="ID:"
+                FontSize="32"
+                TextColor="White"
+                FontAttributes="Bold"
+                WidthRequest="100"
+                HorizontalTextAlignment="End"
+            />
+                <Entry 
+                x:Name="IDEntry"
+                TextColor="White"   
+                FlexLayout.Grow="1"  
+            />
+            </FlexLayout>
+            <FlexLayout Direction="Row" HeightRequest="50" Margin="0,0,30,0">
+                <Label 
+                Text="Pass:"
+                FontSize="32"
+                TextColor="White"
+                FontAttributes="Bold"
+                WidthRequest="100"
+                HorizontalTextAlignment="End"
+            />
+                <Entry 
+                x:Name="PassEntry"
+                TextColor="White"
+                FlexLayout.Grow="1"
+                IsPassword="True"
+            />
+            </FlexLayout>
+        </FlexLayout>
+        <FlexLayout Direction="Column" FlexLayout.Grow="1" JustifyContent="SpaceEvenly" AlignItems="Center">
+            <Button Clicked="Login_Clicked" VerticalOptions="Fill" HorizontalOptions="CenterAndExpand" BackgroundColor="Gray" 
+            Text="Ok" TextColor="Red" FontSize="36" FontAttributes="Bold"
+            WidthRequest="350" Margin="10"  />
+            <Button Clicked="Clean_Clicked" VerticalOptions="Fill" HorizontalOptions="CenterAndExpand" BackgroundColor="Gray" 
+            Text="Limpar"  TextColor="Red" FontSize="36" FontAttributes="Bold"
+            WidthRequest="350" Margin="10"  />
+            <Button Clicked="Credits_Clicked" VerticalOptions="Fill" HorizontalOptions="CenterAndExpand" BackgroundColor="Gray" 
+            Text="Créditos" TextColor="Red" FontSize="36" FontAttributes="Bold"
+            WidthRequest="350" Margin="10"  />
+        </FlexLayout>
+    </FlexLayout>
+</ContentPage>
