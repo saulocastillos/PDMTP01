@@ -2,7 +2,7 @@
 
 Download Vídeo
 
-https://github.com/saulocastillos/PDMTP01/blob/master/video.mp4
+https://github.com/saulocastillos/PDMTP01/blob/master/video.mp4?raw=true
 
 Aplicativo funcionando
 
